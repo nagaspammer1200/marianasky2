@@ -51,7 +51,7 @@ const BeachNavbar = () => {
     <div>
         <div className="content">
             <div className="list">
-                <div onClick={handleChange1}><i className="material-icons">home</i ><h6>Home</h6></div>
+                <div onClick={handleChange1}><i className="material-icons">home</i ><h6>Home </h6></div>
                 <div onClick={handleChange3}><i className="material-icons">assistant</i><h6>Connections</h6></div>
                 <div onClick={handleChange5}><i className="material-icons">group</i><h6>Groups</h6></div>
                 <div onClick={handleChange6}><i className="material-icons">favorite</i><h6>Favourite</h6></div>
