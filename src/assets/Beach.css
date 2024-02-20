@@ -1,0 +1,19 @@
+.bodymain {
+  display:flex;
+}
+.bnv {
+  border-right: 2px red solid;
+  width:20%;
+  max-height:100vh;
+  position:fixed;
+}
+.bodycontent {
+  width:80%;
+  margin-left:20%;
+}
+@media screen and (max-width: 550px) {
+  .bnv {
+    width:13%;
+    position:fixed;
+  }
+}

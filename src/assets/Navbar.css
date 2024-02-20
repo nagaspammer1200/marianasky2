@@ -1,0 +1,54 @@
+.navbar {
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+    vertical-align: middle;
+    font-size:140%;
+}
+.newbarul{
+    display:flex;
+    justify-content: space-evenly;
+    font-weight:600;
+}
+.newbarulli{
+    margin: 1% 1% 1% 1%;
+}
+.newbarulli:hover{
+    border-bottom: 3px solid black;;
+}
+.hidden-menu {
+    display:none;
+}
+a {
+    color:inherit;
+}
+
+/* Responsive Design */
+
+@media screen and (max-width:600px){
+    .navbar {
+        display:flex;
+        padding:8%;
+        width:100%;
+        flex-direction: column;
+        top:0;
+        left:0;
+        text-align: center;
+    }
+    .newbarul{
+        display:flex;
+        justify-content: space-evenly;
+        font-weight:600;
+
+        .newbarulli {
+            display:none;
+        }
+   }
+    .hidden-menu{
+        display:block;
+        margin:2%;
+    }
+    .newbarulinactive {
+        display:block;
+    }
+}

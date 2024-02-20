@@ -1,0 +1,129 @@
+.newpost, .post, .connections, .friends, .groups, .favorites {
+    display:none;
+    margin-left:15%;
+    max-width: 70%;
+}
+.newpost,.post {
+    padding-bottom:1%;
+}
+.postbody {
+    background-color: rgb(112, 179, 255);
+    display:block;
+    padding:3%;
+    margin-bottom:25%;
+}
+.postuser {
+    display:flex;
+    gap:5%;
+    padding:1%;
+    border-bottom:1px solid rgb(0, 0, 0);
+    margin-bottom:5%;
+    .gradient {
+      width: 35px;
+      height: 35px; /* sam height ans square to create square*/
+      border-radius: 50%; /*50 % is a circle */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      background: radial-gradient(
+        circle at 20% 107%,
+        #fdf497 0%,
+        #fdf497 5%,
+        #fd5949 45%,
+        #d6249f 60%,
+        #285aeb 90%
+      );
+  
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 1px solid var(--black);
+      }
+    }
+  }
+.postimage{
+    text-align: center;
+    
+    img {
+    width:50%;
+    height:100%;
+    } 
+}
+.posticons {
+  display:flex;
+  gap:5%;
+  padding:1%;
+}
+.postcomments {
+  display:none;
+}
+.commentscontainer{
+  max-height:150px;
+  overflow-y:auto;
+}
+
+.connections, .friends, .groups {
+  text-align: left;
+  ul{ 
+      margin-left:4%;
+      padding:1%;
+      max-width: 40%;
+      background-color: rgb(163, 163, 163);
+
+      li {
+        padding-bottom:5%;
+      }
+}
+}
+.connections{
+  padding:1%;
+
+  .socs, .deps {
+    padding:2%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .newpost, .post,.connections, .friends, .groups, .favorites {
+    max-width: 100%;
+    margin-left:-5%;
+
+  }
+  .postuser , .postimage, .posticons, .postcomments {
+    padding:3% 2% 3% 2%;
+    height: 100%;
+  }
+  .postimage img{
+    width: 100%;
+    height:300%;
+  }
+  .postcomments {
+    width:100%;
+  }
+  .posticons div{
+    padding-right:10%;
+  }
+  .connections, .friends, .groups {
+    text-align: left;
+    margin-top:100px;
+    overflow-y:auto;
+    ul{ 
+        margin-left:15%;
+        padding:2%;
+        max-width: 100%;
+        background-color: rgb(163, 163, 163);
+  
+        li {
+          padding-bottom:5%;
+        }
+  }
+  }
+  .connections{
+    padding:5%;
+  
+    .socs, .deps {
+      padding:5%;
+    }
+  }
+}

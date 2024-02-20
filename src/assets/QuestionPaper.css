@@ -1,0 +1,77 @@
+/* Styling The Initial Invisible Component*/
+.semesterlist {
+    margin-top:-20px;
+    
+    ul {
+        display:flex;
+        width:100%;
+        background-color: rgb(160, 255, 105);
+        justify-content: space-evenly;
+        vertical-align: middle;
+        font-size:140%;
+        padding:0.5%;
+
+        div {
+            width:100%;
+        }
+    }
+}
+/* Acts as a div Tag for Electrical Component*/
+.departmentcontainer {
+    text-align:center;
+    max-width:100vw;
+    background: #52a6fa;
+}
+
+.firstsem, .secondsem, .thirdsem, .fourthsem, .fifthsem, .sixthsem, .seventhsem, .eighthsem {
+    display:none;
+    height:100%;
+    margin-top:2%;
+    padding:2.5%;
+}
+.firstseries{
+    border:1px black solid;
+    border-radius:15px;
+    max-width: 90%;
+    margin:0% 0% 5% 5%;
+    padding:1.5%;
+}
+/* first series containerContains the first series card*/
+.firstseriescontainer{
+    display:flex;
+    gap:2%;
+    overflow-x: auto;
+    padding:2%;
+}
+.firstseriescard {
+    display:flex;
+    flex-direction: column;
+    background-color: rgb(100, 255, 83);
+    border-radius:5% 5% 5% 5%;
+    width:17em;
+    padding:1.5%;
+    height:250px;
+}
+
+/* Responsive Design */
+@media screen and (max-width:600px){
+   .semesterlist {
+        margin-top:-10px;
+        ul {
+            display:block;
+            padding:0;
+        }
+    }
+    .firstseries{
+        width:90%;
+        margin:5%;
+    }
+    .firstseriescontainer{
+        display:block;
+    }
+    .firstseriescard {
+        height:200px;
+        width:80%;
+        margin: 0% 0% 4% 10%;
+    }
+}

@@ -1,0 +1,28 @@
+.main-content2 {
+    .card{
+        margin-top: 100px;
+    }
+    .card-content div {
+        display:none;
+        text-align: center;
+    }    
+}
+
+/* Responsive Design */
+
+
+@media screen and (max-width:600px){
+    
+    .main-container {
+        margin-top:100px;
+        margin:4%;
+    }
+    .card-acton{
+        display:block;
+        align-items: center;
+    }
+    .card {
+        display:flex;
+        flex-direction: column;    
+    }
+}
